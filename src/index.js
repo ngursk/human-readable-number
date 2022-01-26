@@ -13,14 +13,15 @@ module.exports = function toReadable (number) {
     result = tens[textNumber[0]] + ' ' + units[textNumber[1]];
   } else if (number > 99 && number < 1000) {
     let textNumber = number.toString();
-    if (number%100 < 21 ) {
+    if (number%100 < 20 ) {
       result = units[textNumber[0]] + ' hundred ' + units[+(textNumber[1] + textNumber[2])];
-    } else if (number%100 > 20 ) {
+    } else if (number%100 > 19 ) {
       result = units[textNumber[0]] + ' hundred ' + tens[textNumber[1]] + ' ' + units[textNumber[2]];
     }    
   }
 console.log(result);
+result = result.trim();
 return result;
 }
 
-//toReadable(811)
+//toReadable(440)
