@@ -33,5 +33,3 @@ module.exports = function toReadable (number) {
 console.log(result);
 return result;
 }
-
-toReadable(12);
