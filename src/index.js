@@ -1,5 +1,5 @@
-//module.exports = function toReadable (number) {
-const toReadable = (number) => {
+module.exports = function toReadable (number) {
+//const toReadable = (number) => {
   let result = 'start';
   let units = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
   let tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
@@ -23,4 +23,4 @@ console.log(result);
 return result;
 }
 
-toReadable(811)
+//toReadable(811)
