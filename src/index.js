@@ -22,8 +22,8 @@ module.exports = function toReadable (number) {
         case 9:
           return 'nine';
       }}
-    if (number.lenght = 1) {
+    if (number.length = 1) {
         return readTen(number);} else 
-    if (number.lenght = 3) {
+    if (number.length = 3) {
     return readTen(number[0]) + ' hundred ' + readTen(number[2])}
     }
