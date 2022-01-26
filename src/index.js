@@ -31,6 +31,7 @@ const toReadable = (number) => {
     }
   }
 console.log(result);
+return result;
 }
 
 toReadable(12);
